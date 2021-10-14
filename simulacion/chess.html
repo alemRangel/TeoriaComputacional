@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<html>
+    <head>
+        <title>AFD Alem</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="chess.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="instructions">AFD de un tablero de ajedrez de 16 posiciones</h3>
+            <div id="game">
+                <div id="plays_input">
+                    <p>Ingresa las jugadas obtenidas en el archivo: <span class="bold">jugadasGanadoras.txt</span></p>
+                    <textarea>
+                    </textarea>
+                    <button id="play">Ejecutar</button>
+                </div>
+                <div id="game_container">
+                    <table id="board">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="player1">Pieza</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1<span class="piece1"/></td>
+                                <td class="stripped">2</td>
+                                <td>3</td>
+                                <td class="stripped">4<span class="piece2"/></td>
+                            </tr>
+                            <tr>
+                                <td class="stripped">5</td>
+                                <td>6</td>
+                                <td class="stripped">7</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="stripped">10</td>
+                                <td>11</td>
+                                <td class="stripped">12</td>
+                            </tr>
+                            <tr>
+                                <td class="stripped">13</td>
+                                <td>14</td>
+                                <td class="stripped">15</td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="winner">
+                        <div class="player1wins">Fin de la simulación</div>
+                    </div>
+                </div>
+            </div>
+            <div id="winner_strings" class="winner_string">
+
+            </div>
+        </div>
+    </body>
 </html>
