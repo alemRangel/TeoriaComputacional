@@ -4,7 +4,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 
-number_of_str = 1000000
+number_of_str = 100
 
 def generar_cadenas():
     print("Generando cadenas......")
